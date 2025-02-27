@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import SignupPage from "./pages/SignupPage";
+import SignUpPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
@@ -40,7 +40,7 @@ const App = () => {
         />
         <Route
           path="/signup"
-          element={!authUser ? <SignupPage /> : <Navigate to="/" />}
+          element={!authUser ? <SignUpPage /> : <Navigate to="/" />}
         />
         <Route
           path="/login"
